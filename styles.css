@@ -1,0 +1,87 @@
+/* autor: Rivadeneyra Jonas */
+:root {
+    --fondo1: #f0f8ff;
+    --fondo2: #e6f7ff;
+    --caja-fondo: #ffffff;
+    --boton: #bfe9ff;
+    --boton-hover: #9fe0ff;
+    --texto: #013a63;
+    --acento: #66c2ff;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: linear-gradient(135deg, var(--fondo1), var(--fondo2));
+    color: var(--texto);
+}
+
+main {
+    max-width: 980px;
+    margin: 0 auto;
+    background: var(--caja-fondo);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+h1 {
+    margin: 0 0 .6rem 0;
+    color: #022f4a;
+}
+
+.resumen {
+    margin: 0 0 1rem 0;
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    background: linear-gradient(#f7fcff, #ffffff);
+    border-left: 6px solid var(--acento);
+    color: #034a71;
+    line-height: 1.4;
+    font-size: 0.98rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: .6rem;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+/* estilos simplificados para los botones (sin sombras ni transiciones) */
+nav a {
+    display: inline-block;
+    padding: .6rem .9rem;
+    background: var(--boton);
+    color: var(--texto);
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid rgba(3, 57, 108, 0.06);
+    font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+    background: var(--boton-hover);
+    outline: none;
+}
+
+footer {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #35607f;
+    text-align: right;
+}
+
+@media (max-width:520px) {
+    nav a {
+        flex: 1 1 calc(50% - .6rem);
+        text-align: center;
+    }
+}
